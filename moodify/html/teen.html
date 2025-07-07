@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--to make website responsive-->
+    <title>ease mental</title>
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="..\css\teen.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <img src="../images/logo.jpeg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="../html/index.html#home">Home</a></li>
+                <li><a href="../html/index.html#about">About</a></li>
+                <li><a href="../html/index.html#cards">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--banner-->
+    <section class="main_body">
+        <header class="floating">
+            <h1>Teen Mental Health Tracker</h1>
+            <p class="subtitle">Track your mood, answer questions, and get personalized support</p>
+        </header>
+    
+        
+    
+        <div class="img_container">
+            <div class="left">
+                <div class="paragraph_individual">
+                    <p>Adolescence is a crucial period for developing social and emotional habits important for mental well-being. 
+                    These include adopting healthy sleep patterns; exercising regularly; developing coping, problem-solving, and interpersonal 
+                    skills; and learning to manage emotions. Protective and supportive environments in the family, at school and
+                    in the wider community are important.</p>
+                </div>
+            </div>
+    
+            <div class="right-grid-container">
+                <div class="right-grid">
+                    <div class="slideshow-container">
+                        <!-- Slideshow images -->
+                        <div class="mySlides fade">
+                            <img class="img-1" src="../images/img-1.jpeg" alt="image1">        
+                        </div>
+                        <div class="mySlides fade">
+                            <img class="img-2" src="../images/img-2.jpeg" alt="image2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img class="img-3" src="../images/img-3.jpeg" alt="image3">       
+                        </div>
+                        <div class="mySlides fade">
+                            <img class="img-4" src="../images/img-4.jpeg" alt="image4">
+                        </div>
+                        <!-- End of slideshow images -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="quiz_section">
+    <div class="container">
+        
+
+        <div class="tab-container">
+            <div class="tab active" data-tab="quiz">Quiz</div>
+            <div class="tab" data-tab="mood">Mood Tracker</div>
+            <div class="tab" data-tab="history">History</div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section">
+            <div class="card fade-in" id="quiz-card">
+                <h2 class="card-title">Mental Health Check-in</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                <div id="question-container"></div>
+                <button class="btn btn-block" id="next-btn">Next Question</button>
+            </div>
+
+            <div class="card hidden fade-in" id="result-card">
+                <h2 class="result-title">Your Results</h2>
+                <div class="result-message" id="result-message"></div>
+                <button class="btn btn-accent btn-block" id="restart-btn">Take Another Quiz</button>
+            </div>
+        </div>
+
+        <!-- Mood Tracker Section -->
+        <div id="mood-section" class="hidden">
+            <div class="card">
+                <h2 class="card-title">How Are You Feeling Today?</h2>
+                <div class="mood-tracker">
+                    <div class="mood-option" data-mood="1">
+                        <i class="fas fa-sad-tear mood-1"></i>
+                        <p>Very Bad</p>
+                    </div>
+                    <div class="mood-option" data-mood="2">
+                        <i class="fas fa-frown mood-2"></i>
+                        <p>Bad</p>
+                    </div>
+                    <div class="mood-option" data-mood="3">
+                        <i class="fas fa-meh mood-3"></i>
+                        <p>Neutral</p>
+                    </div>
+                    <div class="mood-option" data-mood="4">
+                        <i class="fas fa-smile mood-4"></i>
+                        <p>Good</p>
+                    </div>
+                    <div class="mood-option" data-mood="5">
+                        <i class="fas fa-laugh mood-5"></i>
+                        <p>Great</p>
+                    </div>
+                </div>
+                <textarea id="mood-note" placeholder="Optional: Add a note about why you're feeling this way..." rows="3" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #e0e0e0; margin-bottom: 15px;"></textarea>
+                <button class="btn btn-block" id="save-mood-btn">Save Mood</button>
+            </div>
+
+            <div class="card hidden" id="mood-result-card">
+                <h2 class="card-title">Mood Recorded</h2>
+                <p id="mood-result-message"></p>
+                <button class="btn btn-secondary btn-block" id="track-another-btn">Track Another Mood</button>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div id="history-section" class="hidden">
+            <div class="card">
+                <h2 class="card-title">Your History</h2>
+                <div id="history-container">
+                    <p id="no-history-message">No history yet. Complete a quiz or track your mood to see your history here.</p>
+                    <div id="history-items"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+    <script src="../js/teen.js"></script>
+</body>
+
+
+</html>

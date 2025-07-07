@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>
+  Registeration</title>
+<head>
+<link rel="stylesheet" href="../css/registration.css">
+
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script&family=Lora&family=Maven+Pro&family=Slabo+27px&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="context">
+<section class="forms-section">
+  <h1 class="section-title">Moodify</h1>
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login" action="main-page.html" method="post">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup" action="main-page.html" method="post">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
+  </div>
+
+<script src="../js/registration.js"></script>
+</body>
+</html>
