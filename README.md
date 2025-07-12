@@ -19,7 +19,7 @@ It helps:
 - JavaScript 🧠
 
 ## 🌐 Live Demo
-[Click here to use Moodify]("https://farrruu21.github.io/Moodify/")
+[Click here to use Moodify](https://farrruu21.github.io/Moodify/)
 
 ## 📂 How it Works
 - Users answer a series of curated questions based on age group
